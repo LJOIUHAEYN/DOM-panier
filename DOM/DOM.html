@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/529b8a145f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="DOM.css">
+    <title>DOM panier</title>
+</head>
+
+<body class="BD">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#"><img src="JLH.png" width="40px" height="40pxpx">𝙹𝙻</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div class="card-group">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/616W-AJnCWL._AC_UL320_.jpg" width="300px" height="300px"
+                    alt="...">
+                <span class="bg-black-100">1750$</span>
+                <hr>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button"><img src="negative.png"></button>
+                    <span>0</span>
+                    <button class="btn btn-primary" type="button"><img src="plus.png"></button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Xiaomi Redmi Note 12 Pro</h5>
+                    <p class="card-text">Écran AMOLED 120Hz, Batterie 5000mAh 67W, Quad-caméra 108MP, 6+128Go, Blanc
+                        (Version Française + 2 ans garantie)</p>
+                    </p>
+                </div>
+                <div>
+                    <button onclick="toggleColor('heart1')"><i id="heart1" class="fas fa-heart"></i></button>   
+                    <span id="favorit1">FAVORIT</span>
+                </div>
+                <div class="card-footer">
+                    <button class="bg-red-500 btn btn-outline-danger"><img src="DELETE.png"></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/81mF7S0SFiL._AC_UL320_.jpg" width="300px" height="300px"
+                    alt="...">
+                <span class="bg-black-100">1090$</span>
+                <hr>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button"><img src="negative.png"></button>
+                    <span>0</span>
+                    <button class="btn btn-primary" type="button"><img src="plus.png"></button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Sony Xperia 1 V </h5>
+                    <p class="card-text">Sony Xperia 1 V - Smartphone Android, Téléphone Portable - Ecran 6.5 Pouces
+                        21:9 CinemaWide 4K HDR OLED - Taux de rafraichissement de 120Hz - Triple caméra - 256Go Stockage
+                        - IP65/68 (Noir)</p>
+                </div>
+                <div>
+                    <button onclick="toggleColor('heart1')"><i id="heart1" class="fas fa-heart"></i></button>   
+                    <span id="favorit1">FAVORIT</span>
+                   </div>
+                <div class="card-footer">
+                    <button class="bg-red-500 btn btn-outline-danger"><img src="DELETE.png"></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/81TBRY98nKL._AC_UL320_.jpg" width="300px" height="300px"
+                    alt="...">
+                <span class="bg-black-100">1120$</span>
+                <hr>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button"><img src="negative.png"></button>
+                    <span>0</span>
+                    <button class="btn btn-primary" type="button"><img src="plus.png"></button>
+                </div>
+                
+                <div class="card-body">
+                    <h5 class="card-title">Sony Xperia 5 V </h5>
+                    <p class="card-text">Sony Xperia 5 V - Ecran 6.1 Pouces 21:9 CinemaWide HDR OLED - 120Hz - Triple
+                        Longueur Focale (avec capteur Nouvelle génération & ZEISS) - Android 13 - Bleu</p>
+                </div>
+                <div>
+                    <button onclick="toggleColor('heart1')"><i id="heart1" class="fas fa-heart"></i></button>   
+                    <span id="favorit1">FAVORIT</span>
+                </div>
+                <div class="card-footer">
+                    <button class="bg-red-500 btn btn-outline-danger"><img src="DELETE.png"></button>
+                </div>
+            </div>
+        </div>
+        <div class="total-price-container">
+            <span>Total Price :</span>
+            <span id="total-price"> 0 </span>
+            <span>$</span>
+            <span><img src="Panier.png"></span>
+        </div>
+    </main>
+    <script>
+        function toggleColor(id) {
+            var heart = document.getElementById(id);
+            var favorit = document.getElementById('favorit1'); // Change 'favorit1' to the appropriate ID for each card
+            if (heart.classList.contains('red-color')) {
+                heart.classList.remove('red-color');
+                favorit.style.color = 'black';
+            } else {
+                heart.classList.add('red-color');
+                favorit.style.color = 'red';
+            }
+        }
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="DOM.js"></script>
+</body>
+
+</html>

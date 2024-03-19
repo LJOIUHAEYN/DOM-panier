@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+.BD{
+    background-image:url(https://th.bing.com/th/id/OIP.D2nSFIRUg_mjcCOMy0naRAHaEs?pid=ImgDet&w=192&h=121&c=7);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+i {
+    cursor: pointer;
+}
+
